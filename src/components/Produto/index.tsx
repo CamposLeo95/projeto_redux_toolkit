@@ -16,7 +16,7 @@ export default function Produto({ id, name, codigo, price, img, removerProduto }
 
     const dispatch = useDispatch()
 
-    const [quantidade, setQuantidade] = useState(0)
+    const [quantidade, setQuantidade] = useState(1)
     const [total, setTotal] = useState(0)
 
 
@@ -45,7 +45,7 @@ export default function Produto({ id, name, codigo, price, img, removerProduto }
         addQuantidade ()
         removeQuantidade ()
         calcTotal()
-    },[quantidade])
+    })
 
     return(
         <tr className="bg-slate-100">
