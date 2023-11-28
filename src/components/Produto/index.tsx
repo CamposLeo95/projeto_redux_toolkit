@@ -16,7 +16,7 @@ export default function Produto({ id, name, codigo, price, img, removerProduto }
 
     const dispatch = useDispatch()
 
-    const [quantidade, setQuantidade] = useState(1)
+    const [quantidade, setQuantidade] = useState(0)
     const [total, setTotal] = useState(0)
 
 
@@ -27,10 +27,11 @@ export default function Produto({ id, name, codigo, price, img, removerProduto }
 
     function removeQuantidade (){
         if(quantidade < 0){
-            return
+            dispatch(decrement(0))
+        }else{
+            setQuantidade((value)=> value -= 1)
+            dispatch(decrement(price))
         }
-        setQuantidade((value)=> value -= 1)
-        dispatch(decrement(price))
     }
 
     function zerarQuantidade (){

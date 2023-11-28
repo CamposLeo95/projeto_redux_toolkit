@@ -9,9 +9,9 @@ export default function Header(){
                 </div>
                 <div className="flex items-center gap-5">
                     <ul className="flex gap-5">
-                        <li>Home</li>
-                        <li>Produtos</li>
-                        <li>Sobre</li>
+                        <li className="cursor-pointer">Home</li>
+                        <li className="cursor-pointer">Produtos</li>
+                        <li className="cursor-pointer">Sobre</li>
                     </ul>
                     <div>
                        <Carrinho />
