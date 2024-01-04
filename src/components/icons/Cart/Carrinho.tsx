@@ -10,7 +10,7 @@ export default function Carrinho(){
 
     return(
         <div className='cursor-pointer relative'>
-            {countQuantity != 0 && <div className='w-6 h-6 bg-red-600 flex justify-center items-center rounded-full absolute bottom-4 left-4'>{countQuantity}</div>}
+            {countQuantity != 0 && <div className='w-6 h-6 bg-amber-500 text-gray-900 font-bold flex justify-center items-center rounded-full absolute bottom-4 left-4'>{countQuantity}</div>}
             <img className="w-7" src={carrinhoIcon} alt="carrinho" />
         </div>
     )

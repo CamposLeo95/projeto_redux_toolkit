@@ -1,6 +1,8 @@
 import { RootState } from '../../Store/store'
-import bandeiras from '../../assets/bandeiras.png'
 import { useSelector } from 'react-redux'
+
+import bandeiras from '../../assets/bandeiras.png'
+import info from '../../assets/info.png'
 
 export default function Checkout(){
 
@@ -14,10 +16,10 @@ export default function Checkout(){
                 <span>R$ {(countTotal).toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
-                <span>Delivery</span>
-                <span>icone</span>
+                <span>Frete</span>
+                <span><img className="w-6 cursor-pointer" src={info} alt="" /></span>
             </div>
-            <button className="bg-green-600 p-2 text-white text-lg ">Check Out</button>
+            <button className="bg-green-600 p-2 text-white text-lg ">Comprar</button>
             <h3 className='font-bold'>Formas de pagamento</h3>
             <div className="flex justify-center">
                 <img src={bandeiras} alt="bandeiras" />
