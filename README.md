@@ -1,4 +1,4 @@
-# Postes - FrontEnd
+# Redux-Toolkit
 
 Este é um projeto para aprender a utilizar o Redux toolkit, fazendo a simulação de um carrinho de compras em que foi preciso fazer as alterações de estado de forma global para poder atualizar varios componentes ao mesmo tempo.
 
